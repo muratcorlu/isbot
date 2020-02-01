@@ -2,9 +2,12 @@
   "name": "isbot",
   "version": "2.5.4",
   "description": "detects bots/crawlers/spiders via the user agent.",
+  "bin": "bin.js",
   "main": "index.js",
+  "man": "man.1",
   "types": "index.d.ts",
   "scripts": {
+    "start": "bin.js",
     "prepare": "./scripts/download-crawlers-json.sh",
     "sort": "./scripts/sort.js",
     "test": "mocha tests/*.js --exclude 'tests/.*'",
